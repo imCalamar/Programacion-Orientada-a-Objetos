@@ -1,0 +1,17 @@
+|a b c d e f g h i j k|
+
+a:=Barco new crearMatricula: 'xe222' eslora:12  anio:1996.
+b:= Cliente new  INICIARdni: 399683233 nombre:'jose'  apellido:'polo' 
+ telefono:4934228  corre:'jose_polo@hotmail.com.ar'.
+c:=Barco new crearMatricula: 'xe222' eslora:10  anio:1996.
+d:= Cliente new  INICIARdni: 399683233 nombre:'angel'  apellido:'polo'
+ telefono:4934228  corre:'jose_polo@hotmail.com.ar'.
+e:=Date newDay:14  month:5  year:2018.
+f:=Date newDay: 15 month:5  year:2018.  
+g:= Puerto new.
+g iniciarPuerto.
+g registrarAlquiler:a  cliente:b fechaFin:e . 
+g registrarAlquiler:c  cliente:d  fechaFin:f. 
+h := g buscarAlquiler: 'jose'.
+
+h getfechaFinal.
